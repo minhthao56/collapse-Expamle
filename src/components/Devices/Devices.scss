@@ -1,0 +1,31 @@
+.devices {
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+.more-devices {
+  grid-template-columns: 30% 70%;
+}
+.less-devices {
+  grid-template-columns: 0% 100%;
+
+  .search-devives {
+    opacity: 0;
+  }
+}
+.container-devices-tree {
+  border-right: solid;
+  border-radius: 10px;
+  border-width: 1px;
+  border-color: #aaaaaa;
+}
+.container-type-device {
+  border-top: solid;
+  border: {
+    width: 1px;
+    color: #cccccc;
+  }
+}
+.table-deviecs {
+  background-color: #dbd6d2;
+  border-radius: 10px;
+}

@@ -1,0 +1,72 @@
+.types-devices {
+    .container-header {
+        border-bottom: solid;
+        border: {
+            width: 1px;
+            color: #eee;
+        }
+        padding: 4px;
+        transition: all linear 0.2s;
+        &:hover {
+            background-color: #ffe99f;
+        }
+    }
+    .light {
+        background-color: #dcf1f3;
+    }
+    .header-list {
+        display: flex;
+        padding: 5px 18px;
+        span {
+            color: #666666;
+            font-size: 13px;
+        }
+    }
+    .icon-device {
+        height: 20px;
+        width: 15px;
+        background-repeat: no-repeat;
+        background-position: -80px -288px;
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+    .icon-list {
+        height: 29px;
+        width: 20px;
+        background-repeat: no-repeat;
+        background-position: -730px -305px;
+    }
+    .icon-plus {
+        height: 20px;
+        width: 15px;
+        background-repeat: no-repeat;
+        background-position: 0px -288px;
+
+        cursor: pointer;
+    }
+    .icon-minus {
+        height: 20px;
+        width: 15px;
+        background-repeat: no-repeat;
+        background-position: -20px -288px;
+
+        cursor: pointer;
+    }
+    .list-device {
+        border-bottom: solid;
+        border: {
+            width: 1px;
+            color: #eee;
+        }
+        transition: all linear 0.2s;
+        &:hover {
+            background-color: #ffe99f;
+        }
+        div {
+            display: flex;
+            align-items: center;
+            margin-left: 24px;
+            padding: 4px;
+        }
+    }
+}

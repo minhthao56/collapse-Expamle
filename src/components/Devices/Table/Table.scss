@@ -1,0 +1,206 @@
+@import "../../VariableSCSS/variable.scss";
+
+.table {
+    padding: 30px;
+    height: 100vh;
+}
+.header-table {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pagination-search-table {
+    display: flex;
+    .form-pagination {
+        display: flex;
+        align-items: center;
+        input {
+            width: 30px;
+            border: solid;
+            border: {
+                width: 1px;
+                color: #888888;
+                radius: 5px;
+            }
+            font-size: 11.5px;
+            font-weight: 700;
+            text-align: center;
+            &:focus {
+                outline: none;
+            }
+        }
+        span {
+            font-size: 12.5px;
+            font-weight: 700;
+            text-align: center;
+            margin-left: 5px;
+        }
+        button {
+            background-color: rgba($color: #000000, $alpha: 0);
+            border: none;
+            height: 25px;
+            width: 29px;
+            cursor: pointer;
+            margin-right: 5px;
+            &:focus {
+                outline: none;
+            }
+        }
+        .bt-start-pg {
+            background-repeat: no-repeat;
+            background-position: 0px -348px;
+        }
+        .bt-pev-pg {
+            background-repeat: no-repeat;
+            background-position: -29px -348px;
+        }
+        .bt-next-pg {
+            background-repeat: no-repeat;
+            background-position: 2px -373px;
+        }
+        .bt-end-pg {
+            background-repeat: no-repeat;
+            background-position: -28px -373px;
+        }
+        select {
+            background-color: #ededed;
+            height: 26px;
+            border-radius: 5px;
+            &:focus {
+                outline: none;
+            }
+            border-color: $border-color;
+            color: #666666;
+        }
+    }
+    .form-search {
+        button,
+        input {
+            border: solid;
+            border: {
+                width: 1px;
+                radius: 5px;
+                color: $border-color;
+            }
+            color: white;
+            background-color: $main-color;
+            margin-left: 5px;
+            font-weight: 500;
+            cursor: pointer;
+            &:focus {
+                outline: none;
+            }
+        }
+        input {
+            background-color: white;
+            color: black;
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+}
+.container-option-table {
+    display: flex;
+    justify-content: flex-end;
+    .option-table {
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        width: 200px;
+        right: 30px;
+        background-color: white;
+        padding: 5px;
+        font-size: 12px;
+        border: solid;
+        border: {
+            color: #eeeeee;
+            width: 1px;
+            radius: 5px;
+        }
+        height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition: all 0.3s;
+    }
+    .show {
+        height: 100px;
+        opacity: 1;
+        transition: all 0.3s;
+    }
+    li {
+        list-style-type: none;
+        border-bottom: solid;
+        border: {
+            width: 1px;
+            color: #eeeeee;
+        }
+        padding: 5px;
+        cursor: pointer;
+        &:hover {
+            background-color: #dddddd;
+        }
+    }
+    .bt-option-table {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        button {
+            width: 40px;
+            cursor: pointer;
+            background-repeat: no-repeat;
+            border: none;
+            background-position: -1px -91px;
+            height: 28px;
+            &:focus {
+                outline: none;
+            }
+        }
+
+        position: relative;
+    }
+}
+.table-list {
+    width: 100%;
+    background-color: white;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 10px;
+
+    th {
+        color: white;
+        height: 50px;
+        border-right: solid;
+        border: {
+            width: 1px;
+            color: #888888;
+        }
+        background-color: #a59c9f;
+        &:first-child {
+            border-top-left-radius: 10px;
+        }
+        &:last-child {
+            border: none;
+            border-top-right-radius: 10px;
+        }
+    }
+
+    td {
+        height: 42px;
+        width: 100px;
+        &:first-child {
+            width: 30px;
+        }
+        border-bottom: solid;
+        border: {
+            width: 1px;
+            color: #dbd6d2;
+        }
+    }
+    &--search {
+        width: 95%;
+        margin: 0 auto;
+    }
+}
